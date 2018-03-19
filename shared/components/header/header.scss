@@ -1,0 +1,85 @@
+.content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    // padding-left: 20px;
+    padding-right: 20px;
+    // height: 40px;
+    height: 67px;
+    background-color: #fff;
+
+    button {
+      background: linear-gradient(#545151, #080808, #484747);
+      color: #fff;
+      border-color: #630f0f;
+      transform: scale(1.2);
+      margin-left: 20px;
+
+      &:hover {
+        background: linear-gradient(#545151, #080808, #484747);
+        color: #fff;
+        border-color: #630f0f;
+        box-shadow: 0 0 2px #630f0f;
+      }
+
+      i {
+        transform: scale(1.2);
+      }
+    }
+  }
+
+  .headerText {
+    color: #fff;
+    font-size: 18px;
+  }
+
+  .trigger {
+    font-size: 20px;
+    line-height: 67px;
+    cursor: pointer;
+    transition: all .3s;
+    padding: 0 24px;
+    &:hover {
+      background:#e6f7ff;
+    }
+  }
+
+  .menu {
+    :global(.anticon) {
+      margin-right: 8px;
+    }
+    :global(.ant-dropdown-menu-item) {
+      width: 160px;
+    }
+  }
+
+  .action {
+    cursor: pointer;
+    padding: 0 12px;
+    display: inline-block;
+    transition: all .3s;
+    height: 100%;
+    > i {
+      font-size: 16px;
+      vertical-align: middle;
+    }
+    &:global(.ant-popover-open),
+    &:hover {
+      background: #e6f7ff;
+    }
+  }
+
+  .account {
+    .avatar {
+      margin: 20px 8px 20px 0;
+      color: #1890ff;
+      background: rgba(255, 255, 255, .85);
+      vertical-align: middle;
+    }
+  }
+
+  .noticeIcon {
+    margin: 0 16px;
+  }

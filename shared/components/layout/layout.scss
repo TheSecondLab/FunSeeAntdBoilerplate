@@ -1,0 +1,38 @@
+// html {
+//   height: 100vh;
+// }
+
+.wrapper {
+  display: flex;
+  height: 100%;
+
+  .logo {
+    height: 64px;
+    line-height: 64px;
+    padding-left: 24px;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 30px;
+  }
+
+  .menu {
+    width: 256px;
+    height: 100vh;
+    overflow-y: auto;
+    background: #001529;
+  }
+
+  .content {
+    flex: 1;
+    height: 100vh;
+    padding: 0 10px 10px;
+    overflow-y: auto;
+    background: #f0f2f5;
+  }
+
+  .childenContent {
+    margin-top: 20px;
+    padding: 20px;
+    background: #fff;
+  }
+}
