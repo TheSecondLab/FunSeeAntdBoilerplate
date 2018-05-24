@@ -1,5 +1,6 @@
-import { takeLatest, takeEvery } from 'redux-saga';
-import { call, put, all } from 'redux-saga/effects';
+import { takeLatest } from 'redux-saga';
+import { call, put, all, fork } from 'redux-saga/effects';
+import { smartSaga } from 'funsee-smart';
 import * as commonAction from './action';
 // 当前环境
 function* loadEnv() {
@@ -14,6 +15,7 @@ function* loadEnv() {
 
 export default function* () {
   yield all([
+    fork(smartSaga),
     takeLatest(commonAction.LOAD_ENV.REQUEST, loadEnv)
   ]);
 }

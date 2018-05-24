@@ -6,20 +6,25 @@ const { SubMenu } = Menu;
 
 class MenuNav extends C {
   render() {
+    const {
+      isFold
+    } = this.props;
+
     return (
       <Menu
         defaultSelectedKeys={['1']}
         defaultOpenKeys={['sub1']}
         mode='inline'
         theme='dark'
+        inlineCollapsed={isFold}
       >
         <Menu.Item key='1'>
           <Icon type='mail' />
-            Navigation One
+          <span>Navigation One</span>
         </Menu.Item>
         <Menu.Item key='2'>
           <Icon type='calendar' />
-            Navigation Two
+          <span>Navigation Two</span>
         </Menu.Item>
         <SubMenu key='sub1' title={<span><Icon type='appstore' /><span>Navigation Three</span></span>}>
           <Menu.Item key='3'>Option 3</Menu.Item>

@@ -1,23 +1,26 @@
 import React, { Component as C } from 'react';
-
+import connect from 'funsee/connect';
 import { MenuNav, Header, BreadCrumbNav } from '../../components';
 import * as style from './layout.scss';
+import { menuToggle } from '../../common/action';
 import './reset.scss';
 
 class Layout extends C {
-  constructor() {
-    super();
-  }
-
   render() {
+    const {
+      isFold
+    } = this.props;
+
     return (
       <section className={style.wrapper}>
-        <nav className={style.menu}>
-          <div className={style.logo}>CARE</div>
-          <MenuNav />
+        <nav className={isFold ? style.foldedMenu : style.unfoldedMenu} style={{ transition: 'width .3s' }}>
+          <div className={isFold ? style.foldedLogo : style.unfoledLogo}>CARE</div>
+          <MenuNav
+            isFold={isFold}
+          />
         </nav>
         <section className={style.content}>
-          <Header userName='xing' isFold={true} />
+          <Header userName='xing' isFold={isFold} menuToggle={this.props.menuToggle} />
           <BreadCrumbNav />
           <div className={style.childenContent}>{this.props.children}</div>
         </section>
@@ -25,5 +28,19 @@ class Layout extends C {
     );
   }
 }
+export default connect(
+  (state) => {
+    const {
+      common: {
+        isFold
+      }
+    } = state;
 
-export default Layout;
+    return ({
+      isFold
+    });
+  },
+  {
+    menuToggle
+  }
+)(Layout);

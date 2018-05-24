@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "funsee-hammer dev",
+    "dev": "cross-env DEPLOY_ENV=dev funsee-hammer dev",
     "eslint": "./node_modules/.bin/eslint . --ext .js",
     "eslint:fix": "./node_modules/.bin/eslint . --ext .js --fix",
     "start": "funsee-hammer build"
@@ -22,15 +22,17 @@
   },
   "homepage": "https://github.com/TheSecondLab/FunSeeAntdBoilerplate#readme",
   "dependencies": {
-    "antd": "^3.3.0",
-    "funsee": "^1.1.0",
-    "funsee-hammer": "^1.1.1",
+    "antd": "^3.5.3",
+    "funsee": "^1.6.2",
+    "funsee-hammer": "^1.4.11",
+    "funsee-smart": "^1.0.21",
     "moment": "^2.21.0",
     "prop-types": "^15.6.1",
     "react": "^16.2.0",
     "redux-saga": "^0.16.0"
   },
   "devDependencies": {
+    "cross-env": "^5.1.6",
     "eslint": "^4.18.1",
     "eslint-config-funsee": "0.0.2"
   }
