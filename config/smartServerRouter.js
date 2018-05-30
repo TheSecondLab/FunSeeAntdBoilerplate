@@ -6,7 +6,9 @@
  * {
  *    moduleName: {
  *      serviceName: service anme,
- *      operationMode:  service path
+ *      path: {
+ *         requestType: path
+ *      }
  *    }
  * }
  *
@@ -14,16 +16,14 @@
  */
 
 module.exports = {
-  // 赔案查询
   subClaimSearch: {
-    serviceName: 'zaNina',
+    serviceName: 'default',
     path: {
-      select: '/za-nina/tac/tacClaimWeb/queryClaimPage',
-      update: '',
-      insert: '',
-      delete: ''
+      select: '/test',
+      update: '/update',
+      insert: '/insert',
+      delete: '/delete'
     }
   }
 };
-
 

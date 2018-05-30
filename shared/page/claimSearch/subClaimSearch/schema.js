@@ -4,115 +4,61 @@ const querySchema = {
   columnCount: 4,
   rowCount: 2,
   fields: [{
-    key: 'channelId',
-    label: '渠道ID',
-    placeholder: '请输入渠道ID',
+    key: 'test1',
+    label: '测试字段1',
+    placeholder: '请输入测试字段1',
     type: FIELD_TYPE.INPUT
   }, {
-    key: 'channelName',
-    label: '渠道名称',
-    placeholder: '请输入渠道名称',
+    key: 'test2',
+    label: '测试字段2',
+    placeholder: '请输入测试字段2',
     type: FIELD_TYPE.INPUT
   }, {
-    key: 'campaignDefId',
-    label: '营销活动ID',
-    placeholder: '请输入营销活动ID',
+    key: 'test3',
+    label: '测试字段3',
+    placeholder: '请输入测试字段3',
     type: FIELD_TYPE.INPUT
   }, {
-    key: 'campaignDefName',
-    label: '营销活动名称',
-    placeholder: '请输入营销活动名称',
+    key: 'test4',
+    label: '测试字段4',
+    placeholder: '请输入测试字段4',
     type: FIELD_TYPE.INPUT
   }, {
-    key: 'packageDefId',
-    label: '产品组合ID',
-    placeholder: '请输入产品组合ID',
+    key: 'test5',
+    label: '测试字段5',
+    placeholder: '请输入测试字段5',
     type: FIELD_TYPE.INPUT
   }, {
-    key: 'packageDefName',
-    label: '产品组合名称',
-    placeholder: '请输入产品组合名称',
+    key: 'test6',
+    label: '测试字段6',
+    placeholder: '请输入测试字段6',
     type: FIELD_TYPE.INPUT
   }, {
-    key: 'reportPolicyNo',
-    label: '保单号',
-    placeholder: '请输入保单号',
+    key: 'test7',
+    label: '测试字段7',
+    placeholder: '请输测试字段7',
     type: FIELD_TYPE.INPUT
   }, {
-    key: 'packagePolicyNo',
-    label: '团单号',
-    placeholder: '请输入团单号',
+    key: 'test8',
+    label: '测试字段8',
+    placeholder: '请输入测试字段8',
     type: FIELD_TYPE.INPUT
   }, {
-    key: 'reportNo',
-    label: '报案号',
-    placeholder: '请输入报案号',
+    key: 'test9',
+    label: '测试字段9',
+    placeholder: '请输入测试字段9',
     type: FIELD_TYPE.INPUT
   }, {
-    key: 'channelApplicationId',
-    label: '渠道订单号',
-    placeholder: '请输入渠道订单号',
-    type: FIELD_TYPE.INPUT
-  }, {
-    key: 'policyholderName',
-    label: '投保人',
-    placeholder: '请输投保人',
-    type: FIELD_TYPE.INPUT
-  }, {
-    key: 'policyholderCertificateNo',
-    label: '投保人证件号码',
-    placeholder: '请输入投保人证件号码',
-    type: FIELD_TYPE.INPUT
-  }, {
-    key: 'insurantName',
-    label: '被保险人',
-    placeholder: '请输入被保险人',
-    type: FIELD_TYPE.INPUT
-  }, {
-    key: 'insurantCertificateNo',
-    label: '被保险人证件号码',
-    placeholder: '请输入被保险人证件号码',
-    type: FIELD_TYPE.INPUT
-  }, {
-    key: 'lossCause',
-    label: '出险原因',
-    placeholder: '请选择出险原因',
-    type: FIELD_TYPE.SELECT
-  }, {
-    key: 'source',
-    label: '案件来源',
-    placeholder: '请选择案件来源',
-    type: FIELD_TYPE.SELECT
-  }, {
-    key: 'taskClaimStatus',
-    label: '案件状态',
-    placeholder: '请选择案件状态',
-    type: FIELD_TYPE.SELECT
-  }, {
-    key: 'reportDateFrom',
-    label: '报案开始日期',
-    placeholder: '请选择报案开始日期',
+    key: 'test10',
+    label: '测试字段10',
+    placeholder: '请选择开始日期',
     type: FIELD_TYPE.DATEPICKER,
     showTime: true,
     format: 'YYYY-MM-DD HH:mm:ss'
   }, {
-    key: 'reportDateTo',
-    label: '报案结束日期',
-    placeholder: '请选择报案结束日期',
-    type: FIELD_TYPE.DATEPICKER,
-    showTime: true,
-    format: 'YYYY-MM-DD HH:mm:ss'
-  }, {
-    key: 'closeDateFrom',
-    label: '结案开始日期',
-    placeholder: '请选择结案开始日期',
-    type: FIELD_TYPE.DATEPICKER,
-    showTime: true,
-    format: 'YYYY-MM-DD HH:mm:ss'
-  }, {
-    key: 'closeDateTo',
-    label: '结案结束日期',
-    placeholder: '请选择结案结束日期',
+    key: 'test11',
+    label: '测试字段11',
+    placeholder: '请选择结束日期',
     type: FIELD_TYPE.DATEPICKER,
     showTime: true,
     format: 'YYYY-MM-DD HH:mm:ss'
@@ -130,40 +76,42 @@ const querySchema = {
 };
 
 const tableSchema = {
-  primaryKey: 'code',
+  primaryKey: 'test1',
   columns: [{
-    key: 'reportNo',
-    title: '报案号'
+    key: 'test1',
+    title: '测试字段1'
   }, {
-    key: 'taskClaimStatus',
-    title: '案件状态'
+    key: 'test2',
+    title: '测试字段2'
   }, {
-    key: 'reportPolicyNo',
-    title: '保单号'
+    key: 'test3',
+    title: '测试字段3'
   }, {
-    key: 'packagePolicyNo',
-    title: '团单号'
+    key: 'test4',
+    title: '测试字段4'
   }, {
-    key: 'policyholderName',
-    title: '投保人'
+    key: 'test5',
+    title: '测试字段5'
   }, {
-    key: 'insurantName',
-    title: '被保险人'
+    key: 'test6',
+    title: '测试字段6'
   }, {
-    key: 'channelName',
-    title: '渠道'
+    key: 'test7',
+    title: '测试字段7'
   }, {
-    key: 'campaignDefName',
-    title: '营销活动'
+    key: 'test8',
+    title: '测试字段8'
   }, {
-    key: 'packageDefName',
-    title: '产品组合'
+    key: 'test9',
+    title: '测试字段9'
   }, {
-    key: 'lossCauseName',
-    title: '出险原因'
-  }, {
-    key: 'accidentDate',
-    title: '出险日期'
+    key: 'test10',
+    title: '测试字段10'
+  }],
+  toolbarButtons: [{
+    text: '新增',
+    type: 'primary',
+    click: 'smartAdd'
   }],
   optionButtons: [{
     text: '查看',
@@ -187,62 +135,63 @@ const tableSchema = {
 
 const editSchema = {
   fields: [{
-    key: 'code', // 传递给后端的字段名
-    label: '域名代码', // 前端显示的名称
-    placeholder: '请输入域名代码',
+    key: 'test1', // 传递给后端的字段名
+    label: '测试字段1', // 前端显示的名称
+    placeholder: '请输入测试字段1',
+    type: FIELD_TYPE.INPUT
+  }, {
+    key: 'test2',
+    label: '测试字段2',
+    placeholder: '请输入测试字段2',
+    type: FIELD_TYPE.INPUT
+  }, {
+    key: 'test3',
+    label: '测试字段3',
+    placeholder: '请输入测试字段3',
+    type: FIELD_TYPE.INPUT
+  }, {
+    key: 'test4',
+    label: '测试字段4',
+    placeholder: '请输入测试字段4',
     type: FIELD_TYPE.INPUT,
-    span: 2
-  }, {
-    key: 'name',
-    label: '域名名称',
-    placeholder: '请输入域名名称，支持模糊查询',
-    type: FIELD_TYPE.INPUT
-  }, {
-    key: 'appName',
-    label: '负责人',
-    placeholder: '请输入负责人，支持模糊查询',
-    type: FIELD_TYPE.INPUT
-  }, {
-    key: 'url',
-    label: '域名描述信息',
-    placeholder: '请输入域名描述信息，支持模糊查询',
-    type: FIELD_TYPE.INPUT
+    span: 3
   }, {
     type: FIELD_TYPE.GROUP,
-    title: 'group test',
+    title: 'group分组字段类型',
     fields: [
       {
-        key: 'group1',
-        label: 'group1',
-        placeholder: '请输入group1',
+        key: 'test5',
+        label: '测试字段5',
+        placeholder: '请输入测试字段5',
         type: FIELD_TYPE.INPUT
       },
       {
-        key: 'group2',
-        label: 'group2',
-        placeholder: '请输入group2',
+        key: 'test6',
+        label: '测试字段6',
+        placeholder: '请输入测试字段6',
         type: FIELD_TYPE.INPUT
       }, {
-        key: 'group3',
-        label: 'group3',
-        placeholder: '请输入group3',
+        key: 'test7',
+        label: '测试字段7',
+        placeholder: '请输入测试字段7',
         type: FIELD_TYPE.INPUT
       }, {
-        key: 'group4',
-        label: 'group4',
-        placeholder: '请输入group4',
+        key: 'test8',
+        label: '测试字段8',
+        placeholder: '请输入测试字段8',
         type: FIELD_TYPE.INPUT
       }
     ]
   }, {
-    key: 'appName1',
-    label: '负责人1',
-    placeholder: '请输入负责人，支持模糊查询',
-    type: FIELD_TYPE.INPUT
+    key: 'test9',
+    label: '测试字段9',
+    placeholder: '请输入测试字段9',
+    type: FIELD_TYPE.INPUT,
+    span: 2
   }, {
-    key: 'url1',
-    label: '域名描述信息1',
-    placeholder: '请输入域名描述信息，支持模糊查询',
+    key: 'test10',
+    label: '测试字段10',
+    placeholder: '请输入测试字段10',
     type: FIELD_TYPE.INPUT
   }]
 };

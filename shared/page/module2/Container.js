@@ -1,5 +1,5 @@
 import React from 'react';
-import { Form, Col, Row, Button, Input, Table, Pagination, Card } from 'antd';
+import { Form, Col, Row, Button, Input, Table, Pagination, Card, Divider, Modal, DatePicker } from 'antd';
 
 const FormItem = Form.Item;
 
@@ -37,8 +37,10 @@ const Module2 = () => (
       <p>Card content</p>
       <p>Card content</p>
       <p>Card content</p>
+      <Divider />
+      <DatePicker />
     </Card>
-
+    <Modal />
   </div>
 );
 const _Module2 = Form.create()(Module2);
